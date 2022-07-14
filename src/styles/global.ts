@@ -3,6 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
   :root {
     --red: #E52E4D;
+    --green: #33CC95;
     --blue: #5429CC;
 
     --blue-light: #6933FF;
@@ -10,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     --text-title: #363F5F;
     --text-body: #969CB3;
 
-    --background: #F0F2F5;
+    /* --background: #F0F2F5; */
     --shape: #FFFFFF;
   }
   
@@ -20,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  //font-size: padrão 16px(Desktop)
+  /* font-size: padrão 16px(Desktop) */
   html {
     @media (max-width: 1080px) {
       font-size: 93.75%; //15px
@@ -30,13 +31,13 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  /* fonte mais legível */
   body {
-    background: var(--background);
-    //fonte mais legível no engine do Google Chrome
+    background: #F0F2F5;
     -webkit-font-smoothing: antialiased;
   }
 
-  //retirar fonte de todos os componentes
+  /* retirar fonte de todos os componentes */
   body, input, textarea, button {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -54,4 +55,4 @@ export const GlobalStyle = createGlobalStyle`
     opacity: 0.6;
     cursor: not-allowed;
   }
-`
+`;
