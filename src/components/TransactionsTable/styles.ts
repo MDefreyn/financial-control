@@ -10,29 +10,29 @@ export const Container = styled.div`
     th {
       color: var(--text-body);
       font-weight: 400;
-      padding: 1 2rem;
+      padding: 1rem 2rem;
       text-align: left;
       line-height: 1.5rem;
     }
 
     td {
-      padding: 1 2rem;
+      padding: 1rem 2rem;
       border: 0;
       background-color: var(--shape);
-      color: var(text-body);
+      color: var(--text-body);
       border-radius: o.25rem;
 
       &:first-child {
-        color: var(text-title);
+        color: var(--text-title);
       }
-    }
-
-    &.deposit {
-      background-color: var(--green);
-    }
-
-    &.withdraw {
-      background-color: var(--red);
+      
+      &.deposit {
+        color: var(--green);
+      }
+      
+      &.withdraw {
+        color: var(--red);
+      }
     }
   }
 `;
