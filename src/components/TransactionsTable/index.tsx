@@ -1,4 +1,4 @@
-import { useTransactions } from "../../hoocks/useTransactionsContext";
+import { useTransactions } from "../../hooks/useTransactionsContext";
 
 import { Container } from "./styles";
 

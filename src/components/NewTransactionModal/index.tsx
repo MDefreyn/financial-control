@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import Modal from "react-modal";
 
-import { useTransactions } from "../../hoocks/useTransactionsContext";
+import { useTransactions } from "../../hooks/useTransactionsContext";
 import { Container, TransactionTypeContainer, RadioBox } from "./styles";
 import incomeImg from "../../assets/income.svg"
 import outcomeImg from "../../assets/outcome.svg"
